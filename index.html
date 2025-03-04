@@ -79,24 +79,67 @@
         object-fit: cover; /* Add this line */
         height: 50vh; /* Add this line */
     }
+    
+    a {
+        color: rgb(60, 255, 0); /* Default link color */
+        font-family: 'Arial', sans-serif; /* Default font */
+        text-decoration: none; /* Remove underline */
+        }
+
+        /* Visited links */
+        a:visited {
+        color: rgb(84, 62, 84); /* Color for visited links */
+        }
+
+        /* Hover state: when the mouse is over the link */
+        a:hover {
+        color: rgb(255, 238, 0); /* Change color on hover */
+        text-decoration: underline; /* Add underline on hover */
+         }
+
+        /* Active state: when the link is being clicked */
+        a:active {
+        color: green; /* Color when the link is active */
+        }
     </style>
 </head>
 <body>
     
     <h1>terminal</h1>
-    
 
     <div class="description">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p><a href="https://maps.app.goo.gl/NJKfrrcw66mEtutF6" target="_blank" rel="noopener noreferrer">@</a>&emsp;&emsp;&emsp;,&emsp;&emsp;&emsp;<a href="https://benedictrueter.com/about/" target="_blank" rel="noopener noreferrer">w/</a>&emsp;&emsp;&emsp;,&emsp;&emsp;&emsp;<a href="https://docs.google.com/spreadsheets/d/1-nzj_RYfewXLN_bh1UYb6l253SAaDQQV_DOwznF_-P8/edit?usp=sharing"target="_blank" rel="noopener noreferrer">*</a>&emsp;&emsp;,&emsp;&emsp;+</p>
     </div>
 
     <div class="events">
-        <h2>Events:</h2>
-        <div class="event"><h3>13 Mar 2025</h3>: J.L. Murtaugh</div>
-        <div class="event">Event 2: Consectetur adipiscing elit.</div>
-        <div class="event">Event 3: Sed do eiusmod tempor incididunt.</div>
-        <div class="event">Event 4: Ut labore et dolore magna aliqua.</div>
+        <style>
+            table {
+              border-collapse: collapse;
+              width: 100%;
+            }
+          
+            td {
+              border: 2px solid rgba(89, 80, 80, 0.06); /* Black border with 20% opacity */
+              padding: 10px;
+              text-align: start;
+            }
+        </style>
+        <table>
+            <tr>
+                <td><strong>17 Mar 2025 - 22 Mar 2025</strong><br></td>
+                <td><i><a href="https://files.cargocollective.com/c1288279/4.4.25_JL-Murtaugh.pdf" target="_blank" rel="noopener noreferrer">Volume, two</a></i></td>
+                <td><a href="https://jlmurtaugh.com/index.php/project/the-bureau/" target="_blank" rel="noopener noreferrer">J.L. Murtaugh</a></td>
+                <td>M-F / 9.00-17.00 <a href="https://docs.google.com/forms/d/e/1FAIpQLScvSScJLSQvLZIs0maKAdQzvrqz09B_99gle56hQVeDhoyx3w/viewform?usp=sharing" target="_blank" rel="noopener noreferrer">by appointment</a></td>
+            </tr>
+            <tr>
+                <td><strong>22 Mar 2025</strong></td>
+                <td><i>Volume, two</i></td>
+                <td>closing reception</td>
+                <td>Sat / 16.00-19.00 </td>
+            </tr>
+        </table>
     </div>
+    
     
     <img src="img/terminal-white.svg" alt="Terminal Image" class="overlay-image"/>
 </body>
