@@ -20,6 +20,12 @@
             background-attachment: fixed;
         }
         
+        .container {
+            max-width: 800px;
+            margin: auto;
+
+        }
+        
         @font-face {
             font-family:'HospitalHuman';
             src: url('font/HospitalHuman-Regular.woff2') format('woff2'),
@@ -35,24 +41,33 @@
             font-weight: normal;
             font-style: normal;
             width: 100%;
-            padding: 2em 0 0 0;
             margin: 0;
             letter-spacing: .1rem;
         }
         
+        .header {
+            padding: 6em 1em 2em 1em;
+            text-align: right;
+        }
+        
+        .header h1 {
+            display: inline;
+        }
         
         h3 {
             display: inline;
         }
-
         .description {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
+            display: inline;
+        }
+        
+        .description a {
+            
+            font-family: 'HospitalHuman', sans-serif;
         }
 
         .events {
-            padding: 20px;
+            padding: 1em 1em;
             max-width: 800px;
             margin: 0 auto;
             text-align: left;
@@ -97,42 +112,41 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>TERMINAL</h1> 
-        <div><a href="https://maps.app.goo.gl/NJKfrrcw66mEtutF6" target="_blank" rel="noopener noreferrer">@</a>&emsp;&emsp;&emsp;,&emsp;&emsp;&emsp;<a href="https://benedictrueter.com/about/" target="_blank" rel="noopener noreferrer">w/</a>&emsp;&emsp;&emsp;,&emsp;&emsp;&emsp;<a href="https://docs.google.com/spreadsheets/d/1-nzj_RYfewXLN_bh1UYb6l253SAaDQQV_DOwznF_-P8/edit?usp=sharing"target="_blank" rel="noopener noreferrer">*</a>&emsp;&emsp;,&emsp;&emsp;+</div>
-    </div>
-    
-
-    <div class="description">
-    </div>
-
-    <div class="events">
-        <style>
-            table {
-              border-collapse: collapse;
-              width: 100%;
-            }
-          
-            td {
-              border: 2px solid rgba(89, 80, 80, 0.06); /* Black border with 20% opacity */
-              padding: 10px;
-              text-align: start;
-            }
-        </style>
-        <table>
-            <tr>
-                <td><strong>17 Mar 2025 - 22 Mar 2025</strong><br></td>
-                <td><i><a href="static/pdf/4.4.25_Volume_two_JL Murtaugh.pdf" target="_blank" rel="noopener noreferrer">Volume, two</a></i></td>
-                <td><a href="https://jlmurtaugh.com/index.php/project/the-bureau/" target="_blank" rel="noopener noreferrer">J.L. Murtaugh</a></td>
-                <td>M-F / 9.00-17.00 <a href="https://docs.google.com/forms/d/e/1FAIpQLScvSScJLSQvLZIs0maKAdQzvrqz09B_99gle56hQVeDhoyx3w/viewform?usp=sharing" target="_blank" rel="noopener noreferrer">by appointment</a></td>
-            </tr>
-            <tr>
-                <td><strong>22 Mar 2025</strong></td>
-                <td><i>Volume, two</i></td>
-                <td>closing reception</td>
-                <td>Sat / 16.00-19.00 </td>
-            </tr>
-        </table>
+    <div class="container">
+        <div class="header">
+            <div class="description"><a href="https://maps.app.goo.gl/NJKfrrcw66mEtutF6" target="_blank" rel="noopener noreferrer">@</a>&emsp;&emsp;&emsp;,&emsp;&emsp;&emsp;<a href="https://benedictrueter.com/about/" target="_blank" rel="noopener noreferrer">w/</a>&emsp;&emsp;&emsp;,&emsp;&emsp;&emsp;<a href="https://docs.google.com/spreadsheets/d/1-nzj_RYfewXLN_bh1UYb6l253SAaDQQV_DOwznF_-P8/edit?usp=sharing"target="_blank" rel="noopener noreferrer">*</a>&emsp;&emsp;,&emsp;&emsp;+</div>
+            
+            <h1>TERMINAL</h1> 
+        </div>
+        
+        <div class="events">
+            <style>
+                table {
+                border-collapse: collapse;
+                width: 100%;
+                }
+            
+                td {
+                border: 2px solid rgba(89, 80, 80, 0.16); /* Black border with 20% opacity */
+                padding: 20px 25px;
+                text-align: start;
+                }
+            </style>
+            <table>
+                <tr>
+                    <td><strong>17 Mar 2025 - 22 Mar 2025</strong><br></td>
+                    <td><i><a href="static/pdf/4.4.25_Volume_two_JL Murtaugh.pdf" target="_blank" rel="noopener noreferrer">Volume, two</a></i></td>
+                    <td><a href="https://jlmurtaugh.com/index.php/project/the-bureau/" target="_blank" rel="noopener noreferrer">J.L. Murtaugh</a></td>
+                    <td>M-F / 9.00-17.00 <a href="https://docs.google.com/forms/d/e/1FAIpQLScvSScJLSQvLZIs0maKAdQzvrqz09B_99gle56hQVeDhoyx3w/viewform?usp=sharing" target="_blank" rel="noopener noreferrer">by appointment</a></td>
+                </tr>
+                <tr>
+                    <td><strong>22 Mar 2025</strong></td>
+                    <td><i>Volume, two</i></td>
+                    <td>closing reception</td>
+                    <td>Sat / 16.00-19.00 </td>
+                </tr>
+            </table>
+        </div>
     </div>
     
     
