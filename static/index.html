@@ -8,13 +8,14 @@
       
 
     <style>
-       
+        
         body {
-            margin: 0;
             font-family: sans-serif; /* Fallback font */
             background: linear-gradient(to bottom, rgb(185,191, 191), rgb(206,182,159));
             color: white;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
             min-height: 100vh;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -22,8 +23,8 @@
         
         .container {
             max-width: 800px;
-            margin: auto;
-
+            margin: 0 auto;
+            
         }
         
         @font-face {
@@ -40,44 +41,38 @@
             font-size: 2em;
             font-weight: normal;
             font-style: normal;
-            width: 100%;
-            margin: 0;
             letter-spacing: .1rem;
+            
         }
         
         .header {
             padding: 6em 1em 2em 1em;
-            text-align: right;
+            
+            display: flex;
+            justify-content: flex-end; /* Pushes .description to the left and h1 to the right */
+            align-items: center; /* Ensures vertical alignment */
+            gap: clamp(0.1em, 5vw, 2em); /* Dynamic spacing */
+            align-items: baseline;
         }
         
-        .header h1 {
-            display: inline;
+        .description {
+           font-family: 'HospitalHuman', sans-serif;
+           display: flex;
+           gap: clamp(0.1em, 5vw, 2em); /* Dynamic spacing for links */
         }
+       
         
         h3 {
             display: inline;
         }
-        
-        .description {
-            display: inline;
-            font-family: 'HospitalHuman', sans-serif;
-            padding-right: 2em;
-        }
-
 
         .events {
             padding: 1em 1em;
-            max-width: 800px;
-            margin: 0 auto;
             text-align: left;
             color: white;
             font-size: .9em;
         }
 
-        .event {
-            margin-bottom: 60px;
-        }
-    
 
     .overlay-image {
         position: fixed;
@@ -87,6 +82,7 @@
         z-index: -1; /* Ensure it's behind the text */
         object-fit: cover; /* Add this line */
     }
+    
     
     events.a {
         font-family: 'Arial', sans-serif; /* Default font */
@@ -117,15 +113,10 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="description"><a href="https://maps.app.goo.gl/NJKfrrcw66mEtutF6" target="_blank" rel="noopener noreferrer">
-                at
-                </a>
-                <a href="https://benedictrueter.com/about/" target="_blank" rel="noopener noreferrer">
-                    w/
-                </a>
-                <a href="https://docs.google.com/spreadsheets/d/1-nzj_RYfewXLN_bh1UYb6l253SAaDQQV_DOwznF_-P8/edit?usp=sharing"target="_blank" rel="noopener noreferrer">
-                    *
-                </a>
+            <div class="description">
+                <a href="https://maps.app.goo.gl/NJKfrrcw66mEtutF6" target="_blank" rel="noopener noreferrer">at</a>
+                <a href="https://benedictrueter.com/about/" target="_blank" rel="noopener noreferrer">w/</a>
+                <a href="https://docs.google.com/spreadsheets/d/1-nzj_RYfewXLN_bh1UYb6l253SAaDQQV_DOwznF_-P8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">*</a>
                 +
             </div>
                     
